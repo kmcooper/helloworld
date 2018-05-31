@@ -8,9 +8,12 @@
 
 #!/usr/bin/perl
 
+# This code checks to see what was given in the command line
+# We use $#ARGV to represent the length of the ARGV array, 
+# and you have to add one since it is 0-based
 if($#ARGV+1 != 0){
 	print "Usage:\tperl helloWorld.pl\n";
-	print "OR just\t ./helloWorld.pl if you think you have your permissions straight.\n";
+	print "OR just\t ./helloWorld.pl if your permissions are okay.\n";
 	die "\n";
 }
 my $message = "Hello world!\n";
